@@ -21,6 +21,10 @@ header{
     align-items: center;
     padding: 30px 10%;
 }
+.fa-camera-retro{
+    font-size: 55px;
+    background: linear-gradient(to bottom, #ff464600 0%,#52d6cf71 100%);
+}
 .logo{
     cursor: pointer;
     color: orangered;
@@ -48,6 +52,7 @@ color: orangered;}
 .banner{
     display: flex;
     height: 100vh;
+    
 }
 .banner-left{
     flex: 1;
@@ -56,6 +61,7 @@ color: orangered;}
     align-items: center;
     /* border: 2px solid; */
     margin-left: 100px;
+    
 }
 .banner-right{
     flex:1;
@@ -203,7 +209,6 @@ p{
 
 .footer-section{
     height: auto;
- 
     background-color: rgb(250, 149, 113);
     padding-top: 40px;
     padding-bottom: 40px;
@@ -225,19 +230,23 @@ p{
     display: flex;
     height: 100vh;
     background-color: rgb(226, 226, 226);
+    
 }
 .extra-left{
     flex:1;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid red; */
+    box-shadow: 0px 0px 15px #f1af709c;
+    border-radius: 5px;
 }
 .extra-right{
     flex:1;
+    margin-left: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .extra-left img{
     width: 50%;
