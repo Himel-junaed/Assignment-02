@@ -204,7 +204,7 @@ p{
 .footer-section{
     height: auto;
  
-    background-color: rgba(255, 174, 82, 0.76);
+    background-color: rgb(250, 149, 113);
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -224,7 +224,7 @@ p{
 .extra-section{
     display: flex;
     height: 100vh;
-    background-color: lightgrey;
+    background-color: rgb(226, 226, 226);
 }
 .extra-left{
     flex:1;
@@ -249,3 +249,32 @@ p{
     margin: 25px 0;
     font-size: 18px;
 }
+/* for mobile */
+@media only screen and (max-width:688px) {
+    .collection-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .banner{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .extra-section{
+        display: inline-block;
+    }
+    .container-logo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+}
+/* for tablet */
+@media only screen and (min-width: 688px) and (max-width: 992px){
+
+    .collection-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+    
