@@ -8,28 +8,116 @@ body{
 }
 header{
     height: 70px;
-    background-color: gray;
+    background-color: rgba(243, 123, 79, 0.897);
 }
 .container{
     max-width: 1000px;
     margin: 0 auto;
     padding: 15px;
 }
-.tittle{
-    align-items: center;
-}
 nav{
+    margin: 0 15px;
     display: flex;
     justify-content: space-between;
 }
 .menu{
     display: flex;
+    float: left;
 }
 .menu li{
     list-style: none;
     margin: 15px;
+    
 }
 .menu li a{
     text-decoration: none;
     color: black;
+    float: left;
+}
+
+.banner{
+    display: flex;
+    height: 100vh;
+}
+.banner-left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid; */
+    margin-left: 40px;
+}
+.banner-right{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.banner-right img{
+    width: 60%;
+    animation: zoom 4s ease infinite;
+
+}
+@keyframes zoom {
+    0% {
+      transform: scale(0.8, 0.8);
+    }
+    50% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(0.8, 0.8);
+    }
+  }
+span{
+    color: orangered;
+    font-size: 55px;
+}
+.banner-txt{
+    margin: 25px 0;
+    font-size: 18px;
+}
+.subscribe{
+    outline: 0;
+    border: 2px solid;
+    border-radius: 10px;
+    font-size: 22px;
+    padding: 10px 20px;
+    color: whitesmoke;
+    background-color: rgb(250, 149, 113);
+}
+.subscribe:hover{
+    color: black;
+    border: 2px solid coral;
+    background-color: white;
+}
+.fa-fingerprint {
+    animation: blink 1s cubic-bezier(0.5, 0, 1, 1) infinite alternate;  
+}
+
+
+@keyframes blink {  
+  from { opacity: 2;
+       color: red;
+}
+  to { opacity: 0;
+    color: red;
+ }
+}
+
+.container-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.logos img{
+    padding: 15px;
+    margin:0 40px;
+    /* border: 2px orchid; */
+}
+hr{
+    color: lightsalmon;
+    flood-opacity: 10%;
 }
